@@ -9,22 +9,23 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-        <nav class="flex items-center justify-between">
+<div class="navbox">
+    <div class="navbar">
+        <nav class="navbar flex items-center justify-between">
             <div class="left flex items-center">
               <div class="branding">
                   <img src="./images/logo.svg" alt="">
               </div>
               <div class="social">  
-                  <a href="#">Home</a>
-                  <a href="#">About</a>
-                  <a href="#">Services</a>
-                  <a href="#">Visual Art</a>
-                  <a href="#">Applications</a>
+                  <a href=".home">home</a>
+                  <a href="#about">about</a>
+                  <a href="#services">services</a>
+                  <a href="#freelancer">freelancer</a>
+                  <a href="#applications">applications</a>
 
               </div>
 
@@ -34,12 +35,20 @@
                 <button class="btn btn-primary">Contact</button>
             </div>
         </nav>
+    </div>
+</div>
+
+<header>
+  
+    <div class="container">
+
         <div class="hero flex items-center justify-between"> 
             
             <div class="left flex-1 flex justify-left"> 
-                <img src="./images/man.png" alt="">
+                <img src="./images/LCH Headshot transparent BWv1.png" alt="">
 
             </div>
+
 
             <div class="right flex-1">
                 <h1>Hello.<br> I'm Oshea Deans.</h1>
@@ -55,13 +64,15 @@
 
             </div>
         </div>
-        </div>
+</div>
+ 
     </header>
 
+    <section id="about">           
     <section class="about">
         <div class="container flex items-center">
             <div class="flex-1">
-                <img class="about-me-img" src="./images/man-2.png" alt="">
+                <img class="about-me-img" src="./images/oshedev.png" alt="">
             </div>
             <div class="flex-1">
                 <h1>About <span>Me</span></h1>
@@ -78,6 +89,10 @@
             </div>
         </div>
     </section>
+
+</section>
+
+<section id="services">
 
     <section class="services">
         <div class="container">
@@ -129,10 +144,111 @@
         </div>
     </section>
 
+</section>
+
     <section class="freelancer">
         <h1>Lorem ipsum dolor sit amet consectetur.</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, ad? Provident quos eos assumenda esse.</p>
         <button class="btn btn-primary">DOWNLOAD CV</button>
+
+
     </section>
+<section id="freelancer">
+    <section class="reviews">
+        <div class="container">
+
+            <h1 class="section-heading"><span>Client</span> Testimonials</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt officia, corrupti culpa repudiandae quibusdam quae nihil beatae voluptate vitae illum!</p>
+
+            <div class="slider">
+
+                <div class="slide">
+                    <img src="./images/lady.png" alt="">
+               
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla cumque nisi nihil magni molestias consequuntur praesentium ratione ea facilis exercitationem. Dicta minima voluptas impedit temporibus? Incidunt vero possimus id nesciunt maiores beatae dolores illum amet, soluta esse ducimus. Cumque, repellat.</p>
+                <span>- Kanika Ross, Houston Fashion</span>
+                </div>
+
+                <div class="slide">
+                    <img src="./images/lady.png" alt="">
+               
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla cumque nisi nihil magni molestias consequuntur praesentium ratione ea facilis exercitationem. Dicta minima voluptas impedit temporibus? Incidunt vero possimus id nesciunt maiores beatae dolores illum amet, soluta esse ducimus. Cumque, repellat.</p>
+                <span>- Kanika Ross, Houston Fashion</span>
+                </div>
+
+                <div class="slide">
+                    <img src="./images/lady.png" alt="">
+               
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla cumque nisi nihil magni molestias consequuntur praesentium ratione ea facilis exercitationem. Dicta minima voluptas impedit temporibus? Incidunt vero possimus id nesciunt maiores beatae dolores illum amet, soluta esse ducimus. Cumque, repellat.</p>
+                <span>- Kanika Ross, Houston Fashion</span>
+                </div>
+            </div>
+
+            <div class="slider-dots"></div>
+
+        </div>
+    </section>
+</section>
+
+
+    <section id="applications">
+        <div class="container">
+            <h1><span>Our</span> Blog</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae quam consequuntur reiciendis.</p>
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="img-wrapper">
+                        <img src="./images/article-ph-1.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <a href="#">
+                            <h1>Lorem ipsum dolor sit.</h1>
+                        </a>
+                        <span>July 25, 2021</span>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae provident optio exercitationem praesentium facere architecto quisquam eligendi consequuntur itaque, cumque aperiam recusandae tempore. Error, voluptas? Velit laboriosam deleniti soluta est.</p>
+                    </div>
+                    <a href="#">Read More</a>
+                </div>
+
+                <div class="card">
+                    <div class="img-wrapper">
+                        <img src="./images/article-ph-1.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <a href="#">
+                            <h1>Lorem ipsum dolor sit.</h1>
+                        </a>
+                        <span>July 25, 2021</span>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae provident optio exercitationem praesentium facere architecto quisquam eligendi consequuntur itaque, cumque aperiam recusandae tempore. Error, voluptas? Velit laboriosam deleniti soluta est.</p>
+                    </div>
+                    <a href="#">Read More</a>
+                </div>
+
+                <div class="card">
+                    <div class="img-wrapper">
+                        <img src="./images/article-ph-1.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <a href="#">
+                            <h1>Lorem ipsum dolor sit.</h1>
+                        </a>
+                        <span>July 25, 2021</span>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae provident optio exercitationem praesentium facere architecto quisquam eligendi consequuntur itaque, cumque aperiam recusandae tempore. Error, voluptas? Velit laboriosam deleniti soluta est.</p>
+                    </div>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/app.js"></script>
+
 </body>
 </html>
