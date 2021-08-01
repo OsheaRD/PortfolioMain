@@ -42,9 +42,6 @@ header{
     background-color: var(--dark);
    
     left: 30%;
-    
-
-
 }
 
 .navbox{
@@ -200,10 +197,13 @@ padding: 0.5rem;
 .section-heading + p{
     color: var(--ternary);
     font-family: "lato",sans-serif;
-    margin-bottom: 8rem; 
+    margin-bottom: 4rem; 
     text-align: center;
 
 }
+
+/* SERVICES >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
 section.services{
     background-color: var(--light);
 }
@@ -222,6 +222,7 @@ section.services .card-wrapper .card{
     padding-top: 5rem;
     text-align: center;
     transition: all .3s ease;
+    cursor: pointer;
 
 }
 
@@ -259,6 +260,8 @@ section.services .card-wrapper .card img{
     -o-transform-radius: (-50%);
 }
 
+/* DOWNLOAD CV CTA >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
 section.freelancer{
     text-align: center;
     background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/camera.png);
@@ -281,6 +284,8 @@ section.freelancer p{
     font-family: "Lato",sans-serif;
 
 }
+
+/* APPLICATIONS  - REFERENCES SLIDER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 section.reviews .slider .slide img{
     width: 100px;
@@ -348,4 +353,168 @@ section.reviews .slider-dots button{
 section.reviews .dots li.slick-active button{
     background: var(--primary);
     width: 20px;
+}
+
+/* PORTFOLIO >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+section.applications{
+    background: var(--dark);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 90%, 0 100%);
+    padding-bottom: 12rem;
+
+
+}
+
+section.applications .section-heading{
+    color: var(--pure);
+}
+
+section.applications .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:3rem
+
+}
+
+section.applications .card-wrapper .card{
+    background: var(--pure);
+
+}
+
+section.applications .card-wrapper .card .card-content{
+    padding: 2rem;
+}
+
+section.applications .card-wrapper .card .card-content h1{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+section.applications .card-wrapper .card .card-content a{
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+section.applications .card-wrapper .card .card-content a:hover{
+    color: var(--primary);
+}
+
+section.applications .card-wrapper .card .card-content span{
+    color: var(--ternary);
+    font-size: 0.8rem;
+}
+
+section.applications .card-wrapper .card .card-content p{
+    font-family: "lato", sans-serif;
+    color: var(--ternary);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+section.applications .card-wrapper .card .card-content a.read-more{
+    font-size: 16rem;
+}
+
+/* CONTACT FORM >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+section.contact .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+section.contact .card-wrapper .card{
+    
+    text-align: center;
+}
+
+section.contact .card-wrapper .card img{
+    margin-bottom: 3rem;
+
+}
+
+section.contact .card-wrapper .card h1{
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+section.contact .card-wrapper .card h6{
+        font-size: 1rem;
+        color: var(--ternary);
+        font-weight: 400;
+        margin-bottom: 2rem;
+}
+
+section.contact .input-wrap{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+    margin-bottom: 1rem;
+    
+   
+}
+
+section.contact .input-wrap placeholder{
+    background: pink;
+}
+
+section.contact .input-wrap-2{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    
+}
+
+section.contact .input-wrap-2 input{
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+section.contact .input-wrap textarea, section.contact .input-wrap-2 textarea{
+    padding: 0.5rem;
+    /* border: 1px solid var(--light); */
+    font-size: 1.2rem;
+    font-family: "lato", sans-serif;
+
+}
+
+section.contact .input-wrap-2 textarea:focus, section.contact input:focus{
+    outline-color: var(--primary);
+    color: #070606;
+    font-weight: bold;
+    font-size: 1.2rem; 
+}
+
+
+section.contact input{
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+
+section.contact .btn-wrapper{
+    text-align: end;
+}
+
+/* FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+footer{
+    background: var(--dark);
+    text-align: center;
+    padding: 3rem 0;
+}
+
+footer .tagline{
+    color: var(--pure);
+}
+
+footer .main-logo{
+    text-align: center;
+    
+}
+
+footer .main-logo img{
+    width: 300px;
+    
 }
