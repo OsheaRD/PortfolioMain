@@ -24,6 +24,7 @@ body{
 header{
     background-color: var(--dark);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100%);
+ 
 
 }
 
@@ -37,15 +38,12 @@ header{
 .navbox .navbar{
     max-width: 1152px;
     margin: 0 auto;
-    top:0;
-    z-index: 1;
     background-color: var(--dark);
-   
-    left: 30%;
 }
 
 .navbox{
     background-color: var(--dark);
+    padding-bottom: 2px;
     
 }
 
@@ -115,6 +113,7 @@ section{
     padding: 2.5rem 0;
 }
 
+/* ABOUT ME >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 section.about .about-me-img{
     height: 450px;
@@ -213,6 +212,7 @@ section.services .card-wrapper{
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 2rem ;
     grid-row-gap: 6rem;
+    padding-top: 2rem;
 }
 
 section.services .card-wrapper .card{
@@ -258,6 +258,8 @@ section.services .card-wrapper .card img{
     -moz-transform-radius: (-50%);
     -ms-transform-radius: (-50%);
     -o-transform-radius: (-50%);
+
+
 }
 
 /* DOWNLOAD CV CTA >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -381,6 +383,12 @@ section.applications .card-wrapper .card{
 
 }
 
+section.applications .card-wrapper .card .img-wrapper img{
+    width: 370px;
+    height: 264px;
+
+}
+
 section.applications .card-wrapper .card .card-content{
     padding: 2rem;
 }
@@ -439,6 +447,7 @@ section.contact .card-wrapper .card h1{
     margin-bottom: 1rem;
 }
 
+/* phone number and contact info */
 section.contact .card-wrapper .card h6{
         font-size: 1rem;
         color: var(--ternary);
@@ -451,6 +460,7 @@ section.contact .input-wrap{
     grid-template-columns: repeat(2,1fr);
     grid-gap: 2rem;
     margin-bottom: 1rem;
+    font-size: 1rem;
     
    
 }
@@ -467,15 +477,19 @@ section.contact .input-wrap-2{
     
 }
 
+/* subject */
 section.contact .input-wrap-2 input{
     margin-bottom: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
+    font-weight: 400;
 }
 
+/* message */
 section.contact .input-wrap textarea, section.contact .input-wrap-2 textarea{
     padding: 0.5rem;
     /* border: 1px solid var(--light); */
-    font-size: 1.2rem;
+    font-size: 1.0rem;
+    font-weight: 400;
     font-family: "lato", sans-serif;
 
 }
@@ -487,10 +501,11 @@ section.contact .input-wrap-2 textarea:focus, section.contact input:focus{
     font-size: 1.2rem; 
 }
 
-
+/* name and email */
 section.contact input{
     padding: 0.5rem;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
+    font-weight: 400;
 }
 
 section.contact .btn-wrapper{
