@@ -116,7 +116,7 @@ section{
 /* ABOUT ME >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 section.about .about-me-img{
-    height: 450px;
+    height: 350px;
 
 }
 
@@ -151,7 +151,7 @@ section.about .social{
 }
 
 section.about .social a{
-    background: var(--dark);    
+    background: var(--primary);    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -167,6 +167,7 @@ section.about .social a{
 
 }
 
+/* background behind social media icon */
 section.about .social a:hover{
     background: var(--dark); 
 }
@@ -249,10 +250,15 @@ section.services .card-wrapper .card:hover h2{
     color: var(--pure);
 }
 
+/* image icon */
 section.services .card-wrapper .card img{
     position: absolute;
     top: -3.5rem;
     left: 50%;
+    width: 100px;
+    height: 97px;
+    background: var(--primary);
+    padding: 6px;
     transform: translateX(-50%);
     -webkit-transform-radius: (-50%);
     -moz-transform-radius: (-50%);
@@ -362,7 +368,7 @@ section.reviews .dots li.slick-active button{
 section.applications{
     background: var(--dark);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 90%, 0 100%);
-    padding-bottom: 12rem;
+    padding-bottom: 10rem;
 
 
 }
@@ -383,6 +389,7 @@ section.applications .card-wrapper .card{
 
 }
 
+/* Recent project images */
 section.applications .card-wrapper .card .img-wrapper img{
     width: 370px;
     height: 264px;
@@ -425,11 +432,17 @@ section.applications .card-wrapper .card .card-content a.read-more{
 
 /* CONTACT FORM >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
+section.contact .container{
+    padding-top: 0rem;
+}
+
 section.contact .card-wrapper{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 3rem;
     margin-bottom: 1.5rem;
+    margin: 16px;
+    
 }
 
 section.contact .card-wrapper .card{
@@ -437,14 +450,29 @@ section.contact .card-wrapper .card{
     text-align: center;
 }
 
-section.contact .card-wrapper .card img{
+/* section.contact .card-wrapper .card .img-wrapper{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: var(--primary);
     margin-bottom: 3rem;
+    text-align: center;
+} */
+
+
+section.contact .card-wrapper .card img{
+    margin-bottom: 1.5rem;
+    /* background: var(--primary); */
+    width: 65px;
+    height: 65px;
+    /* border-radius: 50%; */
 
 }
 
 section.contact .card-wrapper .card h1{
     font-weight: 400;
     margin-bottom: 1rem;
+    color: var(--primary);
 }
 
 /* phone number and contact info */
@@ -518,6 +546,14 @@ footer{
     background: var(--dark);
     text-align: center;
     padding: 3rem 0;
+}
+
+footer .footer-socials img{
+    height: 40px;
+    width: 40px;
+    background: var(--primary);
+    border-radius: 50%;
+   
 }
 
 footer .tagline{
