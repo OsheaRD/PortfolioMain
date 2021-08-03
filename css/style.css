@@ -66,8 +66,21 @@ header{
 }
 
 .navbar .branding{
-    margin-right: 3rem;
+    margin-right: 0.5rem;
+}
 
+.navbar .branding h1{
+    font-family: "lato",sans-serif;
+    color:var(--pure);
+    font-size: 10px;
+    text-decoration: line-through;
+    
+
+}
+
+/* Controls size of logo in nav */
+.navbar .branding img{
+    width:200px;
 }
 
 .hero{
@@ -77,8 +90,8 @@ header{
 }
 
 .hero .left img{
-width: 400px;
-
+width: 450px;
+padding-bottom: 6rem;
 }
 
 .hero .right{
@@ -86,9 +99,9 @@ width: 400px;
 }
 
 .hero .right h6{
-    font-size: 1.6rem;
+    font-size: 1rem;
     color: var(--primary);
-    margin-bottom: .5 rem;
+    /* margin-bottom: .5 rem; */
 
 }
 
@@ -96,13 +109,15 @@ width: 400px;
     font-size: 3rem;    
     font-weight: 100;   
     line-height: 1.2;
-    margin-bottom: 1rem ;
+    margin-bottom: 0.5rem ;
+    font-family: "lato", sans-serif;
 }
 
 .hero .right p{
     line-height: 1.9;   
     margin-bottom: 2rem;
-    margin-top: 2rem ; /* padding for top of paragraph*/
+    margin-top: 0.5rem ; /* padding for top of paragraph*/
+    font-family: "lato",sans-serif;
 }
 
 .hero .right {
@@ -140,7 +155,7 @@ section.about h3{
 section.about p{
     font-family:'Lato',sans-serif;
     color: var(--ternary);
-    line-height: 1.8;
+    line-height: 1.9;
     margin-bottom: 2rem;
 
 }
@@ -151,7 +166,7 @@ section.about .social{
 }
 
 section.about .social a{
-    background: var(--dark);    
+    background: var(--primary);    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -167,6 +182,7 @@ section.about .social a{
 
 }
 
+/* background behind social media icon */
 section.about .social a:hover{
     background: var(--dark); 
 }
@@ -205,6 +221,14 @@ padding: 0.5rem;
 
 section.services{
     background-color: var(--light);
+}
+
+section.services .heading-wrapper{
+    color: var(--ternary);
+    font-family: "lato",sans-serif;
+    margin-bottom: 4rem; 
+    text-align: center;
+    line-height: 1.6;
 }
 
 section.services .card-wrapper{
@@ -249,15 +273,21 @@ section.services .card-wrapper .card:hover h2{
     color: var(--pure);
 }
 
+/* image icon */
 section.services .card-wrapper .card img{
     position: absolute;
     top: -3.5rem;
     left: 50%;
+    width: 100px;
+    height: 97px;
+    background: var(--primary);
+    padding: 6px;
     transform: translateX(-50%);
     -webkit-transform-radius: (-50%);
     -moz-transform-radius: (-50%);
     -ms-transform-radius: (-50%);
     -o-transform-radius: (-50%);
+    border-radius: 25%;
 
 
 }
@@ -320,6 +350,7 @@ section.reviews .slider .slide p{
     font-family: "Lato",sans-serif;
     color: var(--ternary);
     margin-bottom: 1rem;
+    line-height: 1.6;
 
 }
 
@@ -362,7 +393,7 @@ section.reviews .dots li.slick-active button{
 section.applications{
     background: var(--dark);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 90%, 0 100%);
-    padding-bottom: 12rem;
+    padding-bottom: 10rem;
 
 
 }
@@ -383,6 +414,7 @@ section.applications .card-wrapper .card{
 
 }
 
+/* Recent project images */
 section.applications .card-wrapper .card .img-wrapper img{
     width: 370px;
     height: 264px;
@@ -417,6 +449,7 @@ section.applications .card-wrapper .card .card-content p{
     color: var(--ternary);
     margin-top: 1rem;
     margin-bottom: 1rem;
+    line-height: 1.6rem;
 }
 
 section.applications .card-wrapper .card .card-content a.read-more{
@@ -425,11 +458,17 @@ section.applications .card-wrapper .card .card-content a.read-more{
 
 /* CONTACT FORM >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
+section.contact .container{
+    padding-top: 0rem;
+}
+
 section.contact .card-wrapper{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 3rem;
     margin-bottom: 1.5rem;
+    margin: 16px;
+    
 }
 
 section.contact .card-wrapper .card{
@@ -437,14 +476,29 @@ section.contact .card-wrapper .card{
     text-align: center;
 }
 
-section.contact .card-wrapper .card img{
+/* section.contact .card-wrapper .card .img-wrapper{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: var(--primary);
     margin-bottom: 3rem;
+    text-align: center;
+} */
+
+
+section.contact .card-wrapper .card img{
+    margin-bottom: 1.5rem;
+    /* background: var(--primary); */
+    width: 65px;
+    height: 65px;
+    /* border-radius: 50%; */
 
 }
 
 section.contact .card-wrapper .card h1{
     font-weight: 400;
     margin-bottom: 1rem;
+    color: var(--primary);
 }
 
 /* phone number and contact info */
@@ -517,11 +571,29 @@ section.contact .btn-wrapper{
 footer{
     background: var(--dark);
     text-align: center;
-    padding: 3rem 0;
+    padding: 2rem 0;
+}
+
+footer .signature h1{
+    font-family: "windsong", sans-serif;
+    color: var(--pure);
+    font-size: 2.5rem;
+}
+
+footer .footer-socials img{
+    height: 45px;
+    width: 45px;
+    background: var(--primary);
+    border-radius: 50%;
+    
+    
+
+   
 }
 
 footer .tagline{
     color: var(--pure);
+    padding-top: 0.5rem;
 }
 
 footer .main-logo{
