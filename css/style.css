@@ -753,7 +753,7 @@ footer .main-logo img{
     section.applications {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 97%, 0 100%);
     }
-
+}
     /* Iphones 6/7/8 etc >>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
     @media (max-width: 576px) {
