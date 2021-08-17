@@ -259,6 +259,15 @@ section.services .card-wrapper{
     padding-top: 2rem;
 }
 
+section.services .card-wrapper a{
+    text-decoration: none;
+}
+
+section.services .card-wrapper a h2{
+    color: var(--secondary);
+}
+
+
 section.services .card-wrapper .card{
     background-color: var(--pure);
     padding: 3rem 2rem;
@@ -311,6 +320,130 @@ section.services .card-wrapper .card img{
 
 
 }
+
+/* PORTFOLIO PAGE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+section.portfolio{
+    background-color: var(--light);
+}
+
+section.portfolio .heading-wrapper{
+    color: var(--ternary);
+    font-family: "lato",sans-serif;
+    margin-bottom: 4rem; 
+    text-align: center;
+    line-height: 1.6;
+}
+
+section.portfolio .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    grid-column-gap: 2rem ;
+    grid-row-gap: 1rem;
+    padding-top: 2rem;
+    
+}
+
+.inner-card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 2rem ;
+    grid-row-gap: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+section.portfolio .card-wrapper a{
+    text-decoration: none;
+}
+
+section.portfolio .card-wrapper a h2{
+    color: var(--secondary);
+}
+
+
+section.portfolio .card-wrapper .card {
+    background-color: var(--pure);
+    padding: 2rem 2rem;
+    position: relative;
+    padding-top: 3rem;
+    text-align: center;
+    transition: all .3s ease;
+    cursor: pointer;
+    align-items: center;
+    align-content: center;
+}
+
+section.portfolio .card-wrapper .card h2{
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+section.portfolio .card-wrapper .card p{
+    font-family: "Lato",sans-serif;
+    color: var(--ternary);
+    line-height: 1.6;
+
+
+}
+
+section.portfolio .card-wrapper .card:hover{
+    background:var(--dark);
+
+}
+
+section.portfolio .card-wrapper .card:hover h2{
+    color: var(--pure);
+}
+
+/* image icon */
+.card-wrapper .card img{
+    position: absolute;
+    top: -3.5rem;
+    left: 50%;
+    width: 100px;
+    height: 97px;
+    background: var(--primary);
+    padding: 6px;
+    transform: translateX(-50%);
+    -webkit-transform-radius: (-50%);
+    -moz-transform-radius: (-50%);
+    -ms-transform-radius: (-50%);
+    -o-transform-radius: (-50%);
+    border-radius: 25%;
+}
+
+section.portfolio .inner-card-wrapper .gallery{
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 3rem;
+
+}
+
+section.portfolio .inner-card-wrapper .gallery img{
+    width: 230px;
+    padding: 5px;
+    filter: grayscale(100%);
+    transition: 1s;
+
+}
+
+section.portfolio .inner-card-wrapper .gallery img:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* DOWNLOAD CV CTA >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
@@ -475,6 +608,17 @@ section.applications .card-wrapper .card .card-content p{
 section.applications .card-wrapper .card .card-content a.read-more{
     font-size: 16rem;
 }
+
+/* .card-content-expanded{
+    margin-top: 19rem;
+    margin-bottom: 10rem;
+    line-height: 1.6rem;
+    color: red;
+    
+
+} */
+
+
 
 /* CONTACT FORM >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
@@ -647,10 +791,32 @@ footer .main-logo img{
     border: none; 
     outline: none;
     cursor: pointer;
+    display: none;
 }
 
-.hamberger img{
-    width: 30px;
+.hamberger img {
+    width: 40px;
+    position: fixed;
+    /* background: var(--dark); */
+    background: rgb(22,22,22);
+    /* background: linear-gradient(180deg, rgba(22,22,22,1) 0%, rgba(22,22,22,0.813813025210084) 50%, rgba(22,22,22,0.49728641456582634) 100%); */
+    background: linear-gradient(180deg, rgba(22,22,22,1) 0%, rgba(22,22,22,0.9286589635854342) 25%, rgba(22,22,22,0.49728641456582634) 100%);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-left: -5px;
+    border-radius: 25%;
+    transition: transform .5s ease-in-out;
+}
+
+.hamberger img:hover {
+    transform: rotate(90deg);
+}
+
+.mobile-nav ul li a:hover{
+    color: var(--primary);
+    
 }
 
 .mobile-nav{
@@ -715,6 +881,15 @@ footer .main-logo img{
         display: none;
     }
 
+    .hamberger{
+        display: block;
+        
+    }
+
+    .hamberger img{
+        margin-left: -25px;
+    }
+
     header {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 26% 89%, 0 100%);
     }
@@ -759,6 +934,7 @@ footer .main-logo img{
     @media (max-width: 576px) {
       .hero{
           flex-direction: column;
+          padding-top: 4rem;
       }
 
       /* .hero .right p {
@@ -767,6 +943,10 @@ footer .main-logo img{
 
       header {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 78% 96%, 0 100%);
+    }
+
+    .hamberger img{
+        margin-left: -9px;
     }
 
     .about-inner-wrap{

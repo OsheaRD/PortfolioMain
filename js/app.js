@@ -1,3 +1,5 @@
+// References Slider >>>>>>>>>>>>>>>>>>
+
 $(document).ready(function(){
     $('.slider').slick({
         arrows:false,
@@ -6,6 +8,8 @@ $(document).ready(function(){
         dotsClass:'dots'
     })   
     
+// MobileNav Menu >>>>>>>>>>>>>>>>>>>>>>>>
+
 let hamberger = document.querySelector('.hamberger');
 let times = document.querySelector('.times');
 let mobileNav = document.querySelector('.mobile-nav');
@@ -23,12 +27,12 @@ closeSelection.addEventListener('click',function(){
     mobileNav.classList.remove('open')
 });
 
-
-})
+// Snap/ scroll to sections on menu click >>>>>>>>>>
 
 const scroll = new SmoothScroll('.social a[href*="#"]',{
     speed: 800
 });
 
 
+})
 
