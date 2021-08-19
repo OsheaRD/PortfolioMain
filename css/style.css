@@ -327,6 +327,12 @@ section.portfolio{
     background-color: var(--light);
 }
 
+.header-p{
+    background-color: var(--dark);
+ 
+
+}
+
 section.portfolio .heading-wrapper{
     color: var(--ternary);
     font-family: "lato",sans-serif;
@@ -340,17 +346,19 @@ section.portfolio .card-wrapper{
     grid-template-columns: repeat(1, 2fr);
     grid-column-gap: 2rem ;
     grid-row-gap: 1rem;
-    padding-top: 2rem;
+    padding-top: 6rem;
     
 }
 
 .inner-card-wrapper{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-column-gap: 2rem ;
-    grid-row-gap: 3rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 2rem;
+        grid-row-gap: 0rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        background: var(--dark);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 72% 96%, 0 100%);
 }
 
 section.portfolio .card-wrapper a{
@@ -369,7 +377,7 @@ section.portfolio .card-wrapper .card {
     padding-top: 3rem;
     text-align: center;
     transition: all .3s ease;
-    cursor: pointer;
+    /* cursor: pointer; */
     align-items: center;
     align-content: center;
 }
@@ -388,14 +396,14 @@ section.portfolio .card-wrapper .card p{
 
 }
 
-section.portfolio .card-wrapper .card:hover{
+/* section.portfolio .card-wrapper .card:hover{
     background:var(--dark);
 
 }
 
 section.portfolio .card-wrapper .card:hover h2{
     color: var(--pure);
-}
+} */
 
 /* image icon */
 .card-wrapper .card img{
@@ -417,21 +425,21 @@ section.portfolio .card-wrapper .card:hover h2{
 section.portfolio .inner-card-wrapper .gallery{
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
 
 }
 
 section.portfolio .inner-card-wrapper .gallery img{
     width: 230px;
     padding: 5px;
-    filter: grayscale(100%);
-    transition: 1s;
+    filter: brightness(0.9);
+    transition: 0.7s;
 
 }
 
 section.portfolio .inner-card-wrapper .gallery img:hover{
     filter: grayscale(0);
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 
@@ -555,49 +563,49 @@ section.applications .section-heading{
     color: var(--pure);
 }
 
-section.applications .card-wrapper{
+section.applications .index-card-wrapper{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap:3rem
 
 }
 
-section.applications .card-wrapper .card{
+section.applications .index-card-wrapper .card{
     background: var(--pure);
 
 }
 
 /* Recent project images */
-section.applications .card-wrapper .card .img-wrapper img{
+section.applications .index-card-wrapper .card .img-wrapper img{
     width: 370px;
     height: 264px;
 
 }
 
-section.applications .card-wrapper .card .card-content{
+section.applications .index-card-wrapper .card .card-content{
     padding: 2rem;
 }
 
-section.applications .card-wrapper .card .card-content h1{
+section.applications .index-card-wrapper .card .card-content h1{
     font-size: 1rem;
     font-weight: 600;
 }
 
-section.applications .card-wrapper .card .card-content a{
+section.applications .index-card-wrapper .card .card-content a{
     color: var(--secondary);
     text-decoration: none;
 }
 
-section.applications .card-wrapper .card .card-content a:hover{
+section.applications .index-card-wrapper .card .card-content a:hover{
     color: var(--primary);
 }
 
-section.applications .card-wrapper .card .card-content span{
+section.applications .index-card-wrapper .card .card-content span{
     color: var(--ternary);
     font-size: 0.8rem;
 }
 
-section.applications .card-wrapper .card .card-content p{
+section.applications .index-card-wrapper .card .card-content p{
     font-family: "lato", sans-serif;
     color: var(--ternary);
     margin-top: 1rem;
@@ -605,7 +613,7 @@ section.applications .card-wrapper .card .card-content p{
     line-height: 1.6rem;
 }
 
-section.applications .card-wrapper .card .card-content a.read-more{
+section.applications .index-card-wrapper .card .card-content a.read-more{
     font-size: 16rem;
 }
 
@@ -626,7 +634,7 @@ section.contact .container{
     padding-top: 0rem;
 }
 
-section.contact .card-wrapper{
+section.contact .index-card-wrapper{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 3rem;
@@ -635,12 +643,12 @@ section.contact .card-wrapper{
     
 }
 
-section.contact .card-wrapper .card{
+section.contact .index-card-wrapper .card{
     
     text-align: center;
 }
 
-/* section.contact .card-wrapper .card .img-wrapper{
+/* section.contact .index-card-wrapper .card .img-wrapper{
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -650,7 +658,7 @@ section.contact .card-wrapper .card{
 } */
 
 
-section.contact .card-wrapper .card img{
+section.contact .index-card-wrapper .card img{
     margin-bottom: 1.5rem;
     /* background: var(--primary); */
     width: 65px;
@@ -659,14 +667,14 @@ section.contact .card-wrapper .card img{
 
 }
 
-section.contact .card-wrapper .card h1{
+section.contact .index-card-wrapper .card h1{
     font-weight: 400;
     margin-bottom: 1rem;
     color: var(--primary);
 }
 
 /* phone number and contact info */
-section.contact .card-wrapper .card h6{
+section.contact .index-card-wrapper .card h6{
         font-size: 1rem;
         color: var(--ternary);
         font-weight: 400;
