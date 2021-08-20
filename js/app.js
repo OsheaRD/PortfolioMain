@@ -36,3 +36,15 @@ const scroll = new SmoothScroll('.social a[href*="#"]',{
 
 })
 
+// GSAP Timeline >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+
+tl.to(".g-text", { y: "0%", duration: 2, stagger: 0.5 });
+tl.to(".g-slider", { y: "-100%", duration: 2.0, delay: 1.0 });
+tl.to(".intro", { y: "-100%", duration: 1 }, "-=1.5");
+tl.fromTo(".hero", { opacity: 0 }, { opacity: 1, duration: 1.5 });
+// tl.fromTo(".big-text", { opacity: 0 }, { opacity: 1, duration: 1 }, "-=1");
+
+
+
