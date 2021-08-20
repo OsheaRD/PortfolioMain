@@ -173,3 +173,60 @@ const toggleExpansion = (element, to, duration = 350) => {
   cards.forEach(card => card.addEventListener('click', onCardClick));
 
   // create an array of each set of pics then set a forEach
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>
+
+        <section id="applications" class="applications">
+    
+            <div class="container">
+                <h1 class="section-heading"><span>Writing</span> Samples</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae quam consequuntur reiciendis.</p>
+                <div class="index-card-wrapper">
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <img src="./images/makingwebsite.jpeg" alt="">
+                        </div>
+                        <div class="card-content">
+                            <a href="#">
+                                <h1>Making the website: OsheaDeans.com</h1>
+                            </a>
+                            <!-- <span>July 25, 2021</span> -->
+                            <p>profiles. MObile nav</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <img src="./images/contentstrategy.jpeg" alt="">
+                        </div>
+                        <div class="card-content">
+                            <a href="#">
+                                <h1>How I connect the dots between coding and content.</h1>
+                            </a>
+                            <!-- <span>July 25, 2021</span> -->
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae provident optio exercitationem praesentium facere.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae provident optio exercitationem praesentium facere.</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <img src="images/scrumtransition.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <a href="#">
+                                <h1>Who I am as a teammate and what I look for in a team.</h1>
+                            </a>
+                            <!-- <span>July 25, 2021</span> -->
+                            <p>Talent wins games, but teamwork and intelligence win championships.</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
