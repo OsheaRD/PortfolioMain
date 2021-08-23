@@ -230,3 +230,9 @@ const toggleExpansion = (element, to, duration = 350) => {
             </div>
         </section>
     
+
+        <script>
+        function modalTriggerButtons(elem) {
+            elem.addEventListener("click", event => toggleModal(event.currentTarget.getAttribute("data-modal-target")));
+        }
+        </script>

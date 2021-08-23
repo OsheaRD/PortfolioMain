@@ -23,6 +23,46 @@
 </head>
 <body>
 
+ 
+    
+ 
+<!-- modal triggering buttons selection by "data-modal-target" attribute. Alternatively, we could define a class e.g. "modal-trigger" -->
+
+
+
+<div class="modal" id="modal1"> <!-- This is the background overlay -->
+  <div class="modal-content"> <!-- This is the actual modal/popup box -->
+    <span class="modal-close">&times;</span>
+    <h1>Making the Website: OsheaDeans.com</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aspernatur sit repellat cupiditate nemo praesentium cum odit vitae nulla pariatur unde, est enim quia veniam quod maxime tempore placeat, perspiciatis magnam dolorum molestiae sed voluptates! Officiis mollitia minima saepe, porro, officia ut ullam voluptate quisquam dolor dolores, aliquam nostrum voluptates aspernatur accusantium? Et dignissimos neque corrupti quis voluptatibus, at accusamus voluptatem eveniet itaque obcaecati vero distinctio veniam deleniti nisi id illo sit minima nihil fugit, quisquam provident ratione. Dolor, optio architecto. Quos totam, praesentium tempora eveniet numquam dicta veniam quibusdam voluptatibus aliquam ipsa voluptate in placeat asperiores amet doloremque ab deleniti reprehenderit, impedit similique accusantium facilis maxime? Veritatis quasi sunt assumenda quo ad provident expedita debitis enim voluptas est deserunt eum vitae architecto fuga magni rerum sequi nam, quidem omnis ipsa facilis nemo voluptate. Dolores laudantium earum expedita beatae soluta voluptatum ducimus iusto! Molestias esse harum aliquid eaque iste libero doloribus, atque reprehenderit eveniet dolore cupiditate hic debitis nostrum, blanditiis neque excepturi commodi tenetur laborum rem pariatur! Labore repellat ducimus fuga facere, aliquid exercitationem vero quos dignissimos aliquam similique doloribus! ImpedMakit accusamus eveniet, debitis, cupiditate animi enim doloremque tenetur numquam laboriosam voluptatem dicta non, qui obcaecati autem deserunt odit! Natus.</p>
+    <p>Excepturi aperiam quam ducimus cum reiciendis possimus, deserunt mollitia ea similique nisi eveniet repellat impedit.</p>
+  </div>
+</div>
+<div class="modal" id="modal2">
+  <div class="modal-content">
+    <span class="modal-close">&times;</span>
+    <h1>Connecting the Dots Between Coding and Content</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, quod. Laborum aliquam suscipit itaque corporis.</p>
+    <p>Soluta ipsum inventore aspernatur nostrum qui laudantium necessitatibus cupiditate reprehenderit possimus vitae eveniet aperiam, ex, laborum deleniti modi nesciunt iure voluptas! Enim omnis maxime temporibus?</p>
+    <p>Excepturi aperiam quam ducimus cum reiciendis possimus, deserunt mollitia ea similique nisi eveniet repellat impedit.</p>
+  </div>
+</div>
+<div class="modal" id="modal3">
+  <div class="modal-content">
+    <span class="modal-close">&times;</span>
+    <h1>Who I Am As A Teammate</h1>
+    <p>Talent wins games, but teamwork and intelligence win championships.  </p>
+    <p>My journey in software development is largely self-taught and got started around 2004, in high school, when I first discovered “view source” and wrote my first website in Note Pad.  While completing my Bachelors at the University of Houston in Public Relations and Graphic Art, I was able to build and design components that I used as a freelance developer.  Most of the assignments I turned-in were actually elements I created to manage the web presence and social media accounts for my clients and a few companies I started.  Concurrently, I invested 15-years in hospitality leadership where I excelled at team-building, content development, training, financials and customer relationship management.</p> 
+
+    <p>Two years ago, I reevaluated my career trajectory and determined to invest heavily on transitioning to a full-time career in web development.  After a year of self-study on current languages, frameworks and trends I enrolled at DigitalCrafts where I earned formal certification in Web Applications.  Here graduated at the top of my class and excelled at front-end design, UI and project planning.  Additionally, I created valuable opportunities to more deeply understand the software lifecycle for teams, grow my network in the tech community and understand the challenges that developers face.  Drive, resourcefulness and creativity are central to my personality.</p>
+        
+    <p>Thank you for considering me as an asset.  My resume is available for viewing and download and look forward to a more personal introduction and discussion on how I can put my skills to work for your company.</p>
+    
+  </div>
+</div>
+
+
+    
     <button class="hamberger">
         <img src="./images/hamberger.svg" alt="">
     </button>
@@ -141,6 +181,7 @@
             </div>
             <div class="inner-card-wrapper">
                 <div class="gallery">
+                    <a href="http://livsstilco.com/"><img src="./images/portfolio/Livstil/sizedicons/livstitex300.jpg" alt=""></a>
                     <a href="http://scrumptioustech.com/"><img src="./images/portfolio/websiteshots/sizedicons/scrumptious2x300.jpg" alt=""></a>
                     <a href="https://segakazzz.github.io/week5-group-exercise/index.html"><img src="./images/portfolio/websiteshots/sizedicons/gg1x300.jpg" alt="go getter travel agency picture"></a>
                     <a href="https://github.com/MatthewLee4/certified#readme"><img src="./images/portfolio/websiteshots/sizedicons/certifiedx300.jpg" alt=""></a>
@@ -217,12 +258,9 @@
                     <img src="./images/makingwebsite.jpeg" alt="">
                 </div>
                 <div class="card-content">
-                    <a href="#">
-                        <h1>Making the website: OsheaDeans.com</h1>
-                    </a>
-                    <!-- <span>July 25, 2021</span> -->
-                    <p>profiles. MObile nav</p>
-                    <a href="#">Read More</a>
+                  
+                      
+                    <button class="m-button" data-modal-target="modal1">Show Modal 1</button>    
                 </div>
             </div>
 
@@ -236,7 +274,7 @@
                     </a>
                     <!-- <span>July 25, 2021</span> -->
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae provident optio exercitationem praesentium facere.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae provident optio exercitationem praesentium facere.</p>
-                    <a href="#">Read More</a>
+                    <button class="m-button"  data-modal-target="modal2">Show Modal 2</button>
 
                     
                 </div>
@@ -252,12 +290,13 @@
                     </a>
                     <!-- <span>July 25, 2021</span> -->
                     <p>Talent wins games, but teamwork and intelligence win championships.</p>
-                    <a href="#">Read More</a>
+                    <button class="m-button"  data-modal-target="modal3">Show Modal 3</button>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
 
 <a id="tools">
             <div class="card-wrapper">
@@ -277,6 +316,8 @@
     </div>
 </section>
 
+
+
  <footer>
     
     <div class="signature"><h1>Oshea Deans</h1></div>
@@ -295,3 +336,11 @@
         I built this site from scratch.<br>The code is available for viewing on my Github profile.
     
     </footer>
+
+
+<script src="./js/app.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+</body>
+</html>
