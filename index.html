@@ -15,11 +15,7 @@
 <link rel="stylesheet" type="text/css" href
 ="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js
-
-
-
-" async></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js" async></script>
 <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -289,7 +285,7 @@
     
         <div class="input-wrap">
             <input type="text" placeholder="Your Name">
-            <input type="emamil" placeholder="Your Email Address">
+            <input type="email" placeholder="Your Email Address">
         </div>
     
         <div class="input-wrap-2">
@@ -305,7 +301,57 @@
     
     
     </section>
+
     
+<button class="m-button" data-modal-target="modal1">Show Modal 1</button> <!-- modal triggering buttons selection by "data-modal-target" attribute. Alternatively, we could define a class e.g. "modal-trigger" -->
+<button class="m-button"  data-modal-target="modal2">Show Modal 2</button>
+<button class="m-button"  data-modal-target="modal3">Show Modal 3</button>
+
+<div class="modal" id="modal1"> <!-- This is the background overlay -->
+  <div class="modal-content"> <!-- This is the actual modal/popup box -->
+    <span class="modal-close">&times;</span>
+    <h1>Making the Website:<br> OsheaDeans.com</h1>
+    <img src="./images/makingwebsite.jpeg" alt="">
+    <p>As a content enthusiast I have spent thousands of hours browsing the internet for great UI’s, designs and thoughtful UX experiences.</p>  
+
+    <p>I regularly inspect the source code of interesting pages in order to satisfy my general curiosity and stay current with new styles and techniques.</p>
+    
+    <p>In doing so I uncovered a slightly disturbing trend.  The portfolio sites for the vast majority of web and app developers are built on TEMPLATES.  Templates or CMS (content management system) pages such as WordPress and Wix are a popular option for consumers to quickly and simply create web pages.  The framework of the page is written by a developer and the consumer can simply go in to drag and drop content to create their page and customize the major elements such as background color and font without actual working knowledge of HTML, CSS, JS or the like.</p>
+    
+    <p>Coding is a joy for me and I wanted my portfolio page to be a showcase of well written code and aesthetic design.  OsheaDeans.com is 100% legacy code and for the real devs out there I’ve included a few gems in the source code that you can easily copy and paste into your next project such as: GSAP landing page animations, root based css classes, simple and clean lightbox libraries, smooth scrolling to predetermined page set points from links in the navigation bar and stories in jQuery modals.</p>
+    
+    <p>The majority of fonts are imported from Google Font library and the color scheme hails from inspiration I found across several color palettes.  All links and headlines that are active feature CSS hover effects and complementary color schemes.  All of the image classes are coded to accept and resize any source file they are given and also I wrote all the breakpoint classes in CSS to allow for a responsive design.</p>
+    
+    <p>To keep with the theme I wrote a separate navigation bar that automatically appears based on breakpoints and has links controlled by just a bit of javaScript.</p>
+    
+    <p>The total code is rough 6,000 lines and is available on my gitHub: www.github.com/osheard. I broke it into several branches to allow anyone interested to see the progression and steps I took in moving toward a final project. Thanks for looking.</p>
+  </div>
+</div>
+<div class="modal" id="modal2">
+  <div class="modal-content">
+    <span class="modal-close">&times;</span>
+    <h1>Modal Title 2</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, quod. Laborum aliquam suscipit itaque corporis.</p>
+    <p>Soluta ipsum inventore aspernatur nostrum qui laudantium necessitatibus cupiditate reprehenderit possimus vitae eveniet aperiam, ex, laborum deleniti modi nesciunt iure voluptas! Enim omnis maxime temporibus?</p>
+    <p>Excepturi aperiam quam ducimus cum reiciendis possimus, deserunt mollitia ea similique nisi eveniet repellat impedit.</p>
+  </div>
+</div>
+<div class="modal" id="modal3">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <h1>Who I Am As A Teammate</h1>
+      <img src="./images/oshdevcrop.png" alt="">
+      <p>Talent wins games, but teamwork and intelligence win championships.  </p>
+      <p>My journey in software development is largely self-taught and got started around 2004, in high school, when I first discovered “view source” and wrote my first website in Note Pad.  While completing my Bachelors at the University of Houston in Public Relations and Graphic Art, I was able to build and design components that I used as a freelance developer.  Most of the assignments I turned-in were actually elements I created to manage the web presence and social media accounts for my clients and a few companies I started.  Concurrently, I invested 15-years in hospitality leadership where I excelled at team-building, content development, training, financials and customer relationship management.</p> 
+  
+      <p>Two years ago, I reevaluated my career trajectory and determined to invest heavily on transitioning to a full-time career in web development.  After a year of self-study on current languages, frameworks and trends I enrolled at DigitalCrafts where I earned formal certification in Web Applications.  Here graduated at the top of my class and excelled at front-end design, UI and project planning.  Additionally, I created valuable opportunities to more deeply understand the software lifecycle for teams, grow my network in the tech community and understand the challenges that developers face.  Drive, resourcefulness and creativity are central to my personality.</p>
+          
+      <p>Thank you for considering me as an asset.  My resume is available for viewing and download and look forward to a more personal introduction and discussion on how I can put my skills to work for your company.</p>
+      
+    </div>
+  </div>
+
+
     <footer>
     
     <div class="signature"><h1>Oshea Deans</h1></div>
