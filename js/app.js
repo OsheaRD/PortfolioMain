@@ -55,6 +55,7 @@ const modalTriggerButtons = document.querySelectorAll("[data-modal-target]");
 const modals = document.querySelectorAll(".modal");
 const modalCloseButtons = document.querySelectorAll(".modal-close");
 
+
 modalTriggerButtons.forEach(elem => {
   elem.addEventListener("click", event => toggleModal(event.currentTarget.getAttribute("data-modal-target")));
 });

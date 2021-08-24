@@ -1191,9 +1191,9 @@ footer .main-logo img{
     text-decoration: none;
 }
 
-.samples-card .card-content a:hover{
+/* .samples-card .card-content a:hover{
     color: var(--primary);
-}
+} */
 
 .samples-card .card-content span{
     color: var(--ternary);
