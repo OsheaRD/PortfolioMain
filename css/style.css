@@ -999,138 +999,6 @@ footer .main-logo img{
     font-size: 2rem;
 }
 
-
-/* Responsive breaks >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-
-/* Tablet >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-
-@media(max-width:1024px){
-    header #main-nav{
-        display: none;
-    }
-
-    .hamberger{
-        display: block;
-        
-    }
-
-    .hamberger img{
-        margin-left: -25px;
-    }
-
-    header {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 26% 89%, 0 100%);
-    }
-
-    .hero .left img{
-        width: 350px;
-        padding-bottom: 8.5rem;
-    }
-
-    .hero .right h1{
-        font-size: 2.5rem;
-    }
-    
-    section.about .about-me-img {
-        height: 350px;
-    }
-
-    section.services .card-wrapper {
-        grid-template-columns: repeat(2, 1fr)
-    } 
-
-    section.references {
-        padding-bottom: 7rem;
-    }
-
-    section.applications .card-wrapper {
-        grid-template-columns: repeat(1, 1fr);
-
-    }
-
-    section.applications .card-wrapper .card .img-wrapper img {
-        width: 748px;
-        height: 528px;
-    }
-
-    section.applications {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 97%, 0 100%);
-    }
-}
-    /* Iphones 6/7/8 etc >>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-
-    @media (max-width: 576px) {
-      .hero{
-          flex-direction: column;
-          padding-top: 4rem;
-      }
-
-      /* .hero .right p {
-          text-align: center;
-      } */
-
-      header {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 78% 96%, 0 100%);
-    }
-
-    .hamberger img{
-        margin-left: -9px;
-    }
-
-    .about-inner-wrap{
-        flex-direction: column;
-    }
-
-    section.about .social {
-        display: flex;
-        justify-content:center;
-    }
-
-    section.services .card-wrapper {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    section.references {
-        padding-bottom: 4rem;
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 88%, 0 100%);
-    }
-
-    section.reviews .slider .slide {
-        padding: 0 0.5rem;
-
-    }
-
-    section.applications .card-wrapper .card .img-wrapper img {
-        width: 355px;
-        height: 240px;
-    }
-
-    section.applications {
-        padding-bottom: 5rem;
-    }
-
-    section.contact .card-wrapper {
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 1rem;
-    }
-
-    section.contact .input-wrap {
-        grid-template-columns: repeat(1,1fr);
-        grid-gap: 1rem;
-    }
-
-    section.contact .btn-wrapper {
-        text-align: center;
-    }
-}
-
-.newspaper{
-    column-count: 3;
-    text-align: left;
-    column-gap: 140px;
-    padding: 2rem 4rem;
-    display:table-caption;
-}
 .samples-card{
     background: var(--pure);
     border: solid;
@@ -1214,19 +1082,6 @@ footer .main-logo img{
 
 
 /* POPUP MODAL >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-/* @import url('https://fonts.googleapis.com/css?family=Montserrat'); */
-
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: #eee;
-  color: #111;
-  height: 200vh;
-} */
 
 .m-button {
   margin: 0.75rem;
@@ -1355,8 +1210,239 @@ body {
   html { font-size: 14px; }
   .modal-content { width: 80%; }
 }
+
+
 @media(max-width:767px) {
   html { font-size: 12px; }
   .modal-content { padding: 2rem 1rem 1rem 1rem; width: 90%; }
   .modal-content h1 { margin-bottom: 1.5rem; }
 }
+
+
+/* Thank You Page>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.th-bk-img{
+    /* background: var(--dark); */
+    background-image:url(../images/blackdiamondtexture.jpeg);
+    padding: 15% 25%;
+}
+
+
+.th-back{
+    background: rgba(61,207,211,0.8);
+    padding: 20% 20%;
+    line-height: 1.5;
+    border: rem black;
+    border-style: solid;
+    border-radius: 5%;
+   
+}
+
+.thx-button{
+    background: transparent;
+    border: none;
+    text-decoration: underline;
+    font-size: larger;
+    padding-top: 2rem;
+}
+
+.newspaper{
+    column-count: 3;
+    text-align: left;
+    column-gap: 140px;
+    padding: 2rem 4rem;
+    display:table-caption;
+}
+
+/* Responsive breaks >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* Tablet >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media(max-width:1024px){
+    .header-p #main-nav, header #main-nav{
+        display: none;
+    }
+
+    .hamberger{
+        display: block;
+        
+    }
+
+    .hamberger img{
+        margin-left: -25px;
+    }
+
+    header {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 26% 89%, 0 100%);
+    }
+
+    .hero .left img{
+        width: 350px;
+        padding-bottom: 8.5rem;
+    }
+
+    .hero .right h1{
+        font-size: 2.5rem;
+    }
+    
+    section.about .about-me-img {
+        height: 325px;
+        margin: 2rem auto;
+        padding-top: 15px;
+    }
+
+    section.services .card-wrapper {
+        grid-template-columns: repeat(2, 1fr)
+    } 
+
+    section.references {
+        padding-bottom: 7rem;
+    }
+
+    section.applications .samples-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+
+    section.applications .samples-wrapper .samples-card .samples-img-wrapper img {
+        width: 722px;
+        height: 518px;
+        margin: 0rem auto;
+        display: block;
+    }
+
+    section.applications {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 97%, 0 100%);
+    }
+
+}
+    /* Iphones 6/7/8 etc >>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+    @media (max-width: 576px) {
+      .hero{
+          flex-direction: column;
+          padding-top: 4rem;
+      }
+
+      /* .hero .right p {
+          text-align: center;
+      } */
+
+      header {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 78% 96%, 0 100%);
+    }
+
+    .p-head-wrapper {
+        display: flex;
+        padding-top: 0rem;
+        padding-bottom: 0.5rem;
+        padding-left: 2px;
+    }
+
+    .inner-card-wrapper {
+        padding-bottom: 6rem;
+    }
+
+
+    section.portfolio .heading-wrapper {
+        padding-bottom: 2rem;
+    }
+
+    section.portfolio .inner-card-wrapper .gallery {
+        padding-bottom: 2rem;
+        text-align: center;
+    }
+    
+
+    .p-head-wrapper .static-txt {
+        color: #fff;
+        font-size: 23px;
+        font-weight: 100;
+        padding-left: 6px;
+        padding-top: 32px;
+    }
+
+    .card-wrapper .card img {
+        position: absolute;
+        top: -6.5rem;
+    }
+
+    .dynamic-txts li span {
+        /* position: relative; */
+        /* margin: 5px 5px; */
+        line-height: 55px;
+        font-family: 'Bad Script', cursive;
+        font-size: 30px;
+    }
+
+    .hamberger img{
+        margin-left: -9px;
+    }
+
+    .about-inner-wrap{
+        flex-direction: column;
+    }
+
+    section.about .social {
+        display: flex;
+        justify-content:center;
+    }
+
+    section.services .card-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    section.references {
+        padding-bottom: 4rem;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 88%, 0 100%);
+    }
+
+    section.reviews .slider .slide {
+        padding: 0 0.5rem;
+
+    }
+
+    section.applications .samples-wrapper .samples-card .samples-img-wrapper img {
+        width: 329px;
+        height: 240px;
+    }
+
+    section.applications {
+        padding-bottom: 5rem;
+    }
+
+    section.contact .card-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1rem;
+    }
+
+    section.contact .input-wrap {
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 1rem;
+    }
+
+    section.contact .btn-wrapper {
+        text-align: center;
+    }
+
+
+
+    section.portfolio .card-wrapper .card {
+        padding: 2rem 0rem;
+    }
+
+}
+
+
+@media (max-width: 380px) {
+
+    .newspaper {
+        column-count: 3;
+        text-align: left;
+        column-gap: 45px;
+        padding: 2rem 0rem;
+        display: table-caption;
+    }
+}
+
+
