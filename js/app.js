@@ -92,3 +92,8 @@ function toggleModal(modalId) {
     modal.classList.add("modal-show");
   }
 }
+
+
+function msgAlert() {
+  alert("Your message has been sent!");
+}

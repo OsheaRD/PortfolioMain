@@ -236,3 +236,5 @@ const toggleExpansion = (element, to, duration = 350) => {
             elem.addEventListener("click", event => toggleModal(event.currentTarget.getAttribute("data-modal-target")));
         }
         </script>
+
+        ondblclick= "msgAlert()"
